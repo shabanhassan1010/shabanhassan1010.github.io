@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shaban Hassan | Software Engineer</title>
+  <meta name="description" content="Shaban Hassan — Software Engineer (.NET, Clean Architecture, Angular) based in Alexandria, Egypt." />
+
+  <!-- Social preview (LinkedIn / WhatsApp / Facebook) -->
+  <meta property="og:title" content="Shaban Hassan | Software Engineer" />
+  <meta property="og:description" content=".NET & Angular full-stack developer. REST APIs, Clean Architecture, CQRS." />
+  <meta property="og:image" content="https://shabanhassan1010.github.io/assets/profile.jpg" />
+  <meta property="og:url" content="https://shabanhassan1010.github.io/" />
+  <meta property="og:type" content="website" />
+
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============ NAVBAR ============ -->
+  <header class="navbar">
+    <div class="container nav-inner">
+      <a href="#home" class="logo">Shaban<span>.</span></a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#education">Education</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode">
+          <!-- moon icon (light mode) -->
+          <svg class="icon-moon" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          <!-- sun icon (dark mode) -->
+          <svg class="icon-sun" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        </button>
+        <button class="icon-btn menu-btn" id="menuBtn" aria-label="Open menu">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <p class="eyebrow">Hi, I'm</p>
+          <h1>Shaban Hassan</h1>
+          <h2 class="role">Software Engineer <span class="muted">· .NET &amp; Angular</span></h2>
+          <p class="lead">
+            I build scalable REST APIs, reliable backends and responsive front ends —
+            turning complex business requirements into clean, tested, maintainable code.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="assets/Shaban_Hassan_CV.pdf" class="btn btn-primary" download>
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>
+              Download CV
+            </a>
+            <a href="#contact" class="btn btn-outline">Contact me</a>
+          </div>
+
+          <div class="socials">
+            <a href="https://github.com/shabanhassan1010" target="_blank" rel="noopener" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 .5A11.5 11.5 0 0 0 .5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.53-1.33-1.29-1.69-1.29-1.69-1.05-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.78 0c2.2-1.49 3.16-1.18 3.16-1.18.63 1.59.23 2.76.12 3.05.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12 11.5 11.5 0 0 0 12 .5z"/></svg>
+            </a>
+            <a href="https://www.linkedin.com/in/shaban-hassan-8188562bb/" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>
+            </a>
+            <a href="mailto:shabanhassan1010@gmail.com" aria-label="Email">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-photo">
+          <img src="assets/profile.jpg" alt="Shaban Hassan" width="800" height="800" />
+          <div class="badge">
+            <span class="dot"></span> Open to opportunities
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about">
+      <div class="container">
+        <p class="section-tag">About</p>
+        <h2 class="section-title">A bit about me</h2>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I'm a Software Engineer with professional experience in <strong>.NET</strong>,
+              <strong>Clean Architecture</strong> and <strong>full-stack development</strong>.
+              I build scalable REST APIs and reliable backends, and responsive front ends with <strong>Angular</strong>.
+            </p>
+            <p>
+              I currently work as a Full Stack Developer at <strong>AK Group</strong>, where I build business
+              modules like IT Ticketing and Procurement. I work well in Agile teams and care about code that
+              is clean, tested and easy to maintain.
+            </p>
+          </div>
+
+          <ul class="facts">
+            <li><span>Location</span><strong>Alexandria, Egypt</strong></li>
+            <li><span>Current role</span><strong>Full Stack Developer @ AK Group</strong></li>
+            <li><span>Main stack</span><strong>ASP.NET Core · EF Core · SQL Server · Angular</strong></li>
+            <li><span>Languages</span><strong>Arabic (Native) · English (Proficient)</strong></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <p class="section-tag">Experience</p>
+        <h2 class="section-title">Where I've worked</h2>
+
+        <div class="timeline">
+
+          <article class="timeline-item">
+            <div class="timeline-head">
+              <div>
+                <h3>Full Stack Developer</h3>
+                <p class="company">AK Group · Alexandria</p>
+              </div>
+              <span class="date">Sep 2025 – Present</span>
+            </div>
+            <ul class="points">
+              <li>Developed the <strong>IT Ticketing module</strong>: ticket creation, assignment, lifecycle tracking, automated notifications and user evaluation.</li>
+              <li>Built a <strong>notification system</strong> that keeps users informed of ticket updates and notifies assigned IT members when evaluations are submitted.</li>
+              <li>Implemented <strong>workflow management</strong> for IT Managers, Supervisors and IT team members for efficient ticket assignment and tracking.</li>
+              <li>Developed the <strong>Procurement module</strong>: supplier management, procurement workflows, CEO approval process and business rules for supplier assignment and approval.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-head">
+              <div>
+                <h3>Freelance — Pharmacy Ordering System</h3>
+                <p class="company">At Once Pharmacy Application</p>
+              </div>
+              <span class="date">Jun 2025 – Sep 2025</span>
+            </div>
+            <ul class="points">
+              <li><strong>Representative app:</strong> representatives view all pharmacy orders linked to their code, track each order's status and see total earnings from delivered orders.</li>
+              <li><strong>Shopping cart:</strong> pharmacies add medicines from multiple warehouses and place one combined order or order from a specific warehouse.</li>
+              <li><strong>Warehouse dashboard:</strong> warehouse staff follow up on orders and update their statuses; only trusted users can change quantities or discounts.</li>
+              <li>Built an <strong>Excel bulk-import</strong> feature to add/update medicines with row-level validation and clear error reporting.</li>
+            </ul>
+            <div class="tags">
+              <span>C#</span><span>ASP.NET Core</span><span>SQL Server</span><span>EF Core</span><span>Angular</span><span>JWT</span><span>Deployment</span>
+            </div>
+            <div class="links">
+              <a href="https://github.com/ahmed-elhoshy/Pharmacy-Ordering-Inventory-Management-System-ITI-Graduation-Project" target="_blank" rel="noopener">Pharmacy system repo →</a>
+              <a href="https://github.com/shabanhassan1010/WareHouse_Mangement_System" target="_blank" rel="noopener">Warehouse dashboard repo →</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section" id="projects">
+      <div class="container">
+        <p class="section-tag">Projects</p>
+        <h2 class="section-title">Things I've built</h2>
+
+        <div class="projects-grid">
+
+          <!-- Featured project (wide card) -->
+          <article class="project-card featured">
+            <div class="project-top">
+              <span class="project-date">Aug 2026 – Present</span>
+              <span class="pill">Featured</span>
+            </div>
+            <h3>Asset Management System <span class="muted">(AI-Assisted)</span></h3>
+            <ul class="points">
+              <li>Hand-designed SQL Server schema, scaffolded with EF Core <strong>Database First</strong>; Identity in a separate DbContext.</li>
+              <li><strong>Optimistic concurrency</strong> for asset updates/transfers and <strong>Redis caching</strong> with key invalidation on writes.</li>
+              <li>Asset transfers with full history tracking, and soft delete for assets, users and transfers.</li>
+              <li>Admin/User role management with a <strong>last-admin protection</strong> rule.</li>
+              <li><strong>Rotating refresh tokens</strong> — only their hashes are stored in the database.</li>
+              <li><strong>"Assets Assistant"</strong> chat with no external AI provider: a rule-based parser maps questions to read-only intents, handled by parameterized EF Core queries (no SQL injection). Sensitive data like purchase cost is hidden from non-admins.</li>
+              <li>Angular frontend with Guards, Interceptors, Signals and typed services; xUnit tests; API + SQL Server + Redis via Docker Compose.</li>
+            </ul>
+            <div class="tags">
+              <span>ASP.NET Core Web API</span><span>EF Core</span><span>SQL Server</span><span>Redis</span><span>Identity</span><span>JWT</span><span>CQRS</span><span>Angular</span><span>xUnit</span><span>Docker</span>
+            </div>
+            <div class="links">
+              <a href="https://github.com/shabanhassan1010/Asset-Management-Backend" target="_blank" rel="noopener">Backend →</a>
+              <a href="https://github.com/shabanhassan1010/Asset-Management-Frontend" target="_blank" rel="noopener">Frontend →</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top"><span class="project-date">Aug 2024 – Jun 2025</span></div>
+            <h3>E-Commerce Platform</h3>
+            <ul class="points">
+              <li>JWT auth with ASP.NET Core Identity and refresh-token rotation; role-based authorization.</li>
+              <li>Shopping cart API and an order pipeline from checkout to fulfilment.</li>
+              <li>Coupon validation with expiry tracking and <strong>PayPal</strong> checkout.</li>
+              <li>Stored procedures for reporting and faster responses through indexing.</li>
+            </ul>
+            <div class="tags"><span>C#</span><span>ASP.NET Core</span><span>SQL Server</span><span>EF Core</span><span>Angular</span><span>JWT</span></div>
+            <div class="links"><a href="https://github.com/shabanhassan1010/E-Commerce-Application" target="_blank" rel="noopener">View code →</a></div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top"><span class="project-date">Apr 2025 – Sep 2025</span></div>
+            <h3>BulkyBook (ASP.NET MVC)</h3>
+            <ul class="points">
+              <li>N-Tier architecture with Repository Pattern and Unit of Work.</li>
+              <li>Role-based authorization and Facebook social login.</li>
+              <li><strong>Stripe</strong> payments with refunds, and transactional emails via SendGrid.</li>
+              <li>Deployed to <strong>Azure</strong> with performance monitoring.</li>
+            </ul>
+            <div class="tags"><span>ASP.NET Core MVC</span><span>EF Core</span><span>SQL Server</span><span>Azure</span><span>Stripe</span></div>
+            <div class="links"><a href="https://github.com/shabanhassan1010/BulkyBook_MVC" target="_blank" rel="noopener">View code →</a></div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top"><span class="project-date">May 2025</span></div>
+            <h3>Sarah App — Messaging API</h3>
+            <ul class="points">
+              <li>JWT authentication with access and refresh tokens.</li>
+              <li>Email verification via Outlook SMTP and secure, time-limited password reset.</li>
+              <li>User profile CRUD in MongoDB with bcrypt password hashing.</li>
+              <li>Message schema with sender/receiver relations and status updates.</li>
+            </ul>
+            <div class="tags"><span>Node.js</span><span>Express.js</span><span>MongoDB</span><span>JWT</span><span>JavaScript</span></div>
+            <div class="links"><a href="https://github.com/shabanhassan1010/Sarah-Website-NodeJS/tree/master" target="_blank" rel="noopener">View code →</a></div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-top"><span class="project-date">Feb 2024 – Apr 2024</span></div>
+            <h3>Rental House Website <span class="muted">(ITI Graduation Project)</span></h3>
+            <ul class="points">
+              <li>Rental property management app: browse, search and manage listings.</li>
+              <li>RESTful API with full CRUD, search and filter endpoints.</li>
+              <li>JWT authentication with refresh tokens, built on Clean Architecture.</li>
+            </ul>
+            <div class="tags"><span>ASP.NET Core</span><span>EF Core</span><span>SQL Server</span><span>Angular</span><span>Clean Architecture</span></div>
+            <div class="links"><a href="https://github.com/shabanhassan1010/Rentit-Website" target="_blank" rel="noopener">View code →</a></div>
+          </article>
+
+        </div>
+
+        <p class="more-link">
+          <a href="https://github.com/shabanhassan1010?tab=repositories" target="_blank" rel="noopener">See all repositories on GitHub →</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section section-alt" id="skills">
+      <div class="container">
+        <p class="section-tag">Skills</p>
+        <h2 class="section-title">What I work with</h2>
+
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h3>Languages</h3>
+            <div class="chips"><span>C#</span><span>C</span><span>C++</span><span>JavaScript</span><span>TypeScript</span><span>SQL</span></div>
+          </div>
+          <div class="skill-group">
+            <h3>Backend &amp; Frameworks</h3>
+            <div class="chips"><span>ASP.NET Core</span><span>Entity Framework Core</span><span>ADO.NET</span><span>Node.js</span><span>Express.js</span><span>Blazor</span><span>SignalR</span><span>Spring Boot</span><span>WinForms</span></div>
+          </div>
+          <div class="skill-group">
+            <h3>Front-End</h3>
+            <div class="chips"><span>Angular</span><span>HTML5</span><span>CSS3</span><span>Bootstrap</span><span>Tailwind</span><span>jQuery</span></div>
+          </div>
+          <div class="skill-group">
+            <h3>Databases</h3>
+            <div class="chips"><span>MS SQL Server</span><span>MongoDB</span><span>Redis</span></div>
+          </div>
+          <div class="skill-group">
+            <h3>Tools</h3>
+            <div class="chips"><span>Git</span><span>Docker</span><span>xUnit</span><span>CI/CD</span><span>Postman</span><span>Swagger</span><span>Azure</span><span>Dynamics 365 CRM</span></div>
+          </div>
+          <div class="skill-group">
+            <h3>Concepts</h3>
+            <div class="chips"><span>OOP</span><span>SOLID</span><span>Design Patterns</span><span>Clean Architecture</span><span>CQRS / MediatR</span><span>RESTful APIs</span><span>Caching</span><span>Concurrency Control</span><span>Unit Testing</span><span>Agile / Scrum</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION & CERTIFICATIONS ============ -->
+    <section class="section" id="education">
+      <div class="container">
+        <p class="section-tag">Education</p>
+        <h2 class="section-title">Education &amp; training</h2>
+
+        <div class="edu-grid">
+          <article class="edu-card">
+            <span class="date">Nov 2024 – Jul 2025</span>
+            <h3>Professional Training Program (9-Month Diploma)</h3>
+            <p class="company">ITI — Information Technology Institute · Alexandria</p>
+            <p>Professional Web Development &amp; BI-Infused CRM Track.</p>
+          </article>
+
+          <article class="edu-card">
+            <span class="date">Nov 2023 – Mar 2024</span>
+            <h3>Intensive Training Program (ITP)</h3>
+            <p class="company">ITI — Information Technology Institute · Alexandria</p>
+            <p>5-month intensive program.</p>
+          </article>
+
+          <article class="edu-card">
+            <span class="date">Sep 2017 – Aug 2022</span>
+            <h3>B.A. in Geographic Information Systems</h3>
+            <p class="company">Damanhour University</p>
+            <p>Grade: Very Good.</p>
+          </article>
+
+          <article class="edu-card cert">
+            <span class="date">Oct 2024 – Nov 2024</span>
+            <h3>HCIA-AI Certification</h3>
+            <p class="company">Huawei ICT Academy</p>
+            <p>40-hour program covering AI fundamentals, machine learning, neural networks and real-world AI applications.</p>
+            <a href="https://www.linkedin.com/posts/shaban-hassan-8188562bb_ai-machinelearning-hcia-activity-7250167545679294464-Hwfb" target="_blank" rel="noopener">View certificate →</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section section-alt" id="contact">
+      <div class="container contact">
+        <p class="section-tag">Contact</p>
+        <h2 class="section-title">Let's work together</h2>
+        <p class="lead center">
+          I'm open to new opportunities and collaborations. The fastest way to reach me is by email.
+        </p>
+
+        <div class="contact-cards">
+          <a class="contact-card" href="mailto:shabanhassan1010@gmail.com">
+            <span class="label">Email</span>
+            <strong>shabanhassan1010@gmail.com</strong>
+          </a>
+          <a class="contact-card" href="tel:+201274592316">
+            <span class="label">Phone</span>
+            <strong>+20 127 459 2316</strong>
+          </a>
+          <a class="contact-card" href="https://www.linkedin.com/in/shaban-hassan-8188562bb/" target="_blank" rel="noopener">
+            <span class="label">LinkedIn</span>
+            <strong>Shaban Hassan</strong>
+          </a>
+          <a class="contact-card" href="https://github.com/shabanhassan1010" target="_blank" rel="noopener">
+            <span class="label">GitHub</span>
+            <strong>shabanhassan1010</strong>
+          </a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Shaban Hassan · Built with HTML, CSS &amp; JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
