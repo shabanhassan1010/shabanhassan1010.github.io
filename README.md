@@ -9,7 +9,7 @@ Built with plain HTML, CSS and JavaScript (no framework, no build step) and host
 ```
 index.html        → all the page content (sections: hero, about, experience, projects, skills, education, contact)
 styles.css        → design (colors are variables at the top of the file, dark mode below them)
-script.js         → dark mode toggle, mobile menu, scroll animations
+script.js         → dark mode toggle, mobile menu, scroll animations, project filter buttons
 assets/
   profile.jpg             → profile photo
   Shaban_Hassan_CV.pdf    → the CV behind the "Download CV" button
@@ -19,6 +19,7 @@ assets/
 ## Updating the site
 
 1. Edit `index.html` (e.g. add a new project card by copying an existing `<article class="project-card">`).
+   Set its `data-tags` (e.g. `data-tags="dotnet angular"`) so the filter buttons (All / .NET / Angular / AI / Node.js) can find it.
 2. To update the CV, replace `assets/Shaban_Hassan_CV.pdf` with a file of the same name.
 3. Push:
 
